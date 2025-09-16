@@ -65,6 +65,17 @@ docker-compose up --build
 ```
 5.Access UI & API
 
+terminal 1
+first step
+```
+cd api
+python -m uvicorn app.main:app --reload
+```
+terminal 2
+second step
+``` 
+streamlit run ui/streamlit_app.py
+```
 Streamlit UI: http://localhost:8501
 
 API endpoints:

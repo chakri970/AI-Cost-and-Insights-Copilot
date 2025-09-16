@@ -1,0 +1,25 @@
+version: '3.8'
+services:
+  api:
+    build: ./api
+    volumes:
+      - ./data:/app/data
+      - ./infra/faiss_data:/app/infra/faiss_data
+      - ./api/app:/app
+    ports:
+      - '8000:8000'
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+    restart: unless-stopped
+
+  ui:
+    build: ./ui
+    volumes:
+      - ./ui:/app
+    ports:
+      - '8501:8501'
+    environment:
+      - API_URL=http://api:8000
+    depends_on:
+      - api
+    restart: unless-stopped

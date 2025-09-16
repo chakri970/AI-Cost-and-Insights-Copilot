@@ -1,0 +1,4 @@
+invoice_month,account_id,subscription,service,resource_group,resource_id,region,usage_qty,unit_cost,cost,tags_json
+2025-09,acct-1,sub-1,DB,rg-dev,res-db-0-0,eastus,81.132,0.962,78.049,"{""owner"": ""alice""}"
+2025-09,acct-1,sub-1,Analytics,rg-dev,res-ana-0-1,westus,86.423,0.679,58.681,"{""owner"": ""bob""}"
+2025-09,acct-1,sub-1,Compute,rg-dev,res-com-0-2,westus,36.922,0.546,20.159,"{""owner"": ""alice""}"

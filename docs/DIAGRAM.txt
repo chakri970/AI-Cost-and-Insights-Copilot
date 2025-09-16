@@ -1,0 +1,9 @@
+[CSV/JSON data] --> ETL (api/app/etl.py) --> SQLite (data/finops.db)
+                               |
+                               +--> Transform/KPI functions (api/app/crud.py)
+                               |
+                               +--> Billing rows indexed -> Embeddings -> FAISS (infra/faiss_data)
+
+User UI (Streamlit) --> FastAPI (/kpi, /ask) --> Retriever (FAISS) --> LLM (Gemini) --> Answer
+                                                              |
+                                                              +--> FinOps tips doc (RAG reference)

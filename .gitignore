@@ -1,0 +1,87 @@
+# -----------------------
+# Python
+# -----------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# -----------------------
+# Virtual Environment
+# -----------------------
+venv/
+.env
+.env.*
+*.env
+
+# -----------------------
+# IDE / Editor
+# -----------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# -----------------------
+# OS Files
+# -----------------------
+.DS_Store
+Thumbs.db
+
+# -----------------------
+# Logs
+# -----------------------
+*.log
+logs/
+*.out
+
+# -----------------------
+# Data / Local DBs
+# -----------------------
+*.db
+*.sqlite
+*.sqlite3
+/data/finops.db
+/data/test_db.py
+/data/test_sample.csv
+/data/sample_billing.csv
+/data/billing.csv
+/data/resources.csv
+
+# -----------------------
+# FAISS / Vector Store
+# -----------------------
+*.index
+*.index.pkl
+*.json
+faiss.index
+faiss_meta.json
+vector_store.index
+vector_store.index.pkl
+vector_store_meta.json
+
+# -----------------------
+# Testing
+# -----------------------
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.mypy_cache/
+.cache/
+
+# -----------------------
+# Docker
+# -----------------------
+*.pid
+*.seed
+*.bak
+*~ 
